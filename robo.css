@@ -1,0 +1,166 @@
+.head,.lefthand,.righthand,.leftleg,.rightleg,
+.mid{
+    background-color: black     ;
+}
+.head{
+    margin: 0 auto;
+    width:150px ;
+    height:150px ;
+    margin-bottom: 30px;
+    border-radius:100px 100px 0px 0px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.eyes{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.lefteye,
+.righteye
+{
+ width:20px ;
+ height:20px ;
+ border-radius: 15px;
+ background-color: white;
+ 
+}
+.top{
+    width: 230px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+}
+.lefthand,
+.righthand{
+    width: 40px;
+    height: 90px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.lefthand{
+    margin-right: 10px;
+  }
+  .righthand{
+    margin-left: 10px;
+  }
+  .mid {
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+    transition: border-radius 1s;
+  }
+  .bottom {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+   .leftleg,
+  .rightleg {
+    width: 40px;
+    height: 110px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+  }
+  .leftleg {
+    margin-left: 45px;
+  }
+  .rightleg {
+    margin-left: 30px;
+  }
+  .android1:hover .head {
+    animation: movehead 2s infinite;
+  }
+  .android1:hover .mid {
+    border-radius: 40%;
+    animation: movemid 2s infinite;
+  }
+  .android1:hover .lefthand {
+    animation: movelefthand 2s infinite;
+  }
+  .android1:hover .righthand {
+    animation: moverighthand 2s infinite;
+  }
+  .android1:hover .leftleg {
+    animation: moveleftleg 2s infinite;
+  }
+  .android1:hover .rightleg {
+    animation: moverightleg 2s infinite;
+  }
+  @keyframes movehead {
+    0% {width: 200px;}
+    25% {width: 300px;}
+    50% {width: 200px;}
+    75% {width: 300px;}
+    100% {width: 200px;}
+  }
+  
+  @keyframes movelefthand {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+    25% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+    75% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+  
+  @keyframes moverighthand {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+    25% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+    75% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+
+  @keyframes moveleftleg {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+  }
+  
+  @keyframes moverightleg {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-20deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+  }
+  
+  @keyframes movemid {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  
